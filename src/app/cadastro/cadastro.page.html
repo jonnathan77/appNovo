@@ -16,20 +16,65 @@
             <div text-center>
               <h3></h3>
             </div>
-            <div padding>
-              <ion-item>
-                <ion-input  name="name" type="text" placeholder="Nome" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="email" type="email" placeholder="seuemail@email.com" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
-              </ion-item>
-              <ion-item>
-                <ion-input name="confirm" type="password" placeholder="Repita sua senha" ngModel required></ion-input>
-              </ion-item>
-            </div>
+            
+<div class="container">
+  <p>Adicionar Veiculos</p>
+
+  <div class="row">
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <ion-label class="form-label">Placa</ion-label>
+                  <input type="text" class="form-control" name="placa">                    
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Chassi</label>
+                  <input type="text" class="form-control" name="chassi">
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Renavam</label>
+                  <input  type="text" class="form-control" name="renavam">
+              </div>
+
+              <div class="mb-3">
+                <ion-row>
+                  <label class="form-label">Modelo</label>
+                  <ion-list style="display: flex;">
+                    <ion-item style="display: flex;">
+                      <ion-select aria-label="Fruit" interface="popover" placeholder="Select fruit">
+                        <ion-select-option value="apples">Apples</ion-select-option>
+                        <ion-select-option value="oranges">Oranges</ion-select-option>
+                        <ion-select-option value="bananas">Bananas</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  </ion-list>
+                </ion-row>
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Marca</label>
+                  <input type="text" class="form-control" name="marca">
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Ano</label>
+                  <input  type="text" class="form-control" name="ano">
+              </div>
+          </form>
+      </div>
+
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <label class="form-label"></label>
+              </div>
+
+          </form>
+      </div>
+  </div>
+</div>
             <div padding>
               <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Cadastrar</ion-button>
             </div>

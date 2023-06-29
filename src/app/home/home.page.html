@@ -9,7 +9,7 @@
     <ion-button routerLink="/home">Home</ion-button>
   </ion-row>
   <ion-row>
-    <ion-button>Cadastre sua van</ion-button>
+    <ion-button routerLink="/cadastro">Cadastre sua van</ion-button>
   </ion-row>
   <ion-row>
     <ion-button routerLink="/cadastro">Cadastrar Evento</ion-button>
@@ -29,10 +29,24 @@
           <ion-menu-button>
           </ion-menu-button>
         </ion-buttons>
-        <ion-title>Menu</ion-title>
+        <ion-title>Olá Felipe Caldas</ion-title>
+        <ion-buttons slot="end">
+          <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
+
+      <ion-row>
+        <ion-col>
+          <ion-label class="big-heading">
+            <p class="ion-text-start">Veja os eventos disponiveis</p>
+          </ion-label>
+  
+        </ion-col>
+      </ion-row>
+
+      <ion-searchbar class="ion-margin-bottom"placeholder="Pesquise um evento..."></ion-searchbar>
     
     <div>
       <ion-button>Faculdade</ion-button> <ion-button>Eventos</ion-button>
