@@ -1,17 +1,18 @@
 ion-content{
-    --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
-    url("/assets/img/chelsea.webp") no-repeat center center / cover;
+    --background: #15B891;
+    //--background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+    //url("/assets/img/chelsea.webp") no-repeat center center / cover;
 }
 
 .login-section{
     // height: 74vh;
     // width: 100%;
     max-width: 500px;
-    background: #fff;
+    //background: #fff;
     right: 0;
     left: 0;
     bottom: 0;
-    position: fixed;
+   // position: fixed;
     margin: auto;
     border-top-left-radius: 46px;
     border-top-right-radius: 46px;
@@ -63,9 +64,10 @@ ion-content{
     .action-button{
         text-align: center;
         .login-button{
-            --background: #f9b801;
+            --background: #129878;
             width: 100%;
             font-weight: bold;
+            border-radius: 30%;
         }
         p{
             margin-top: 15px;
@@ -74,10 +76,12 @@ ion-content{
         }
         .signup-button{
             --border-color: #b4b4b4;
-            -color: #000;
+            --background: #cccccc;
+            --color: #000;
             font-weight: bold;
             margin-top: 10px;
             width: 100%;
+            border-radius: 100px;
         }
     }
 }

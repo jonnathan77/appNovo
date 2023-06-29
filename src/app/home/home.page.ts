@@ -4,10 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
-  providers: [
-    //other providers ...
-    players,
-  ],
 })
 export class HomePage implements OnInit {
 

@@ -1,0 +1,43 @@
+<ion-content>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <ion-header >
+      <ion-toolbar>
+        <ion-icon style="cursor: pointer;"  routerLink="/home" name="arrow-back-outline"></ion-icon>
+        <ion-title>Cadastrar Evento</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <ion-content style="background-color: #15B891">
+    <form  #form="ngForm" ><!-- (ngSubmit)="register(form)">-->
+      <ion-grid>
+        <ion-row style="background-color: #15B891" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3></h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input  name="name" type="text" placeholder="Nome do Evento" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="seuemail@email.com" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="confirm" type="password" placeholder="Repita sua senha" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Cadastrar</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
+
+
+</ion-content>
