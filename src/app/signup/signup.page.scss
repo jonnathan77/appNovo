@@ -1,8 +1,8 @@
 ion-content{
-    --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
-    url("/assets/img/green-solid.jpg") no-repeat center center / cover;
+    --background: #15B891;
+    //--background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+    //url("/assets/img/chelsea.webp") no-repeat center center / cover;
 }
-
 .login-section{
     // height: 74vh;
     // width: 100%;
@@ -41,7 +41,7 @@ ion-content{
                 top: 37px;
                 z-index: 2;
                 font-size: 1.2rem;
-                left: 5px;
+                right: 5px;
             }
             ion-label{
                 position: absolute;

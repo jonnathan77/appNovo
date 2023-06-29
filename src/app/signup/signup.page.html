@@ -6,30 +6,51 @@
     </div>
     <div class="login-form ion-padding">
       <div class="form-input">
-        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">NOME</ion-label>
+          <ion-input type="text"></ion-input>
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-item>
+      </div>
+      <div class="form-input">
         <ion-item>
           <ion-label position="floating">EMAIL</ion-label>
           <ion-input type="email"></ion-input>
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-item>
+      </div>
+      <ion-row>
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">TELEFONE</ion-label>
+          <ion-input type="tel" placeholder="(99)99999-9999"></ion-input>
+          <ion-icon name="call-outline"></ion-icon>
         </ion-item>
       </div>
       <div class="form-input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item style="top:-2px;left: 30px;">
+          <ion-label position="floating">DATA NASCIMENTO</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+      </div>
+    </ion-row>
+      <div class="form-input">
         <ion-item>
           <ion-label position="floating">SENHA</ion-label>
           <ion-input type="password"></ion-input>
+          <ion-icon name="lock-closed-outline"></ion-icon>
         </ion-item>
       </div>
       <div class="form-input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">CONFIRME SUA SENHA</ion-label>
           <ion-input type="password"></ion-input>
+          <ion-icon name="lock-closed-outline"></ion-icon>
         </ion-item>
       </div>
     </div>
     <div class="action-button ion-padding">
-      <ion-button size="large" routerLink="/home" class="signup-button" fill="outline">Login</ion-button>
-      <p>Esqueceu a senha?</p>
+      <ion-button size="large" routerLink="/login" class="signup-button" fill="outline">Cadastre-se</ion-button>
     </div>
   </div>
   </ion-content>
