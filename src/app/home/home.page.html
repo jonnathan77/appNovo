@@ -53,6 +53,17 @@
     </div>
 
 
+    <div style="margin: 10px auto;"  class="category-slider ion-padding-start">
+      <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+        <ion-slide *ngFor="let category of categories">
+          <ion-col>
+            <h4>{{ category.name }}</h4>
+            <img src="{{ category.image }}" />
+          </ion-col>
+        </ion-slide>
+      </ion-slides>
+    </div>
+    
     <ion-card style="display: inline-block; margin-top: 50px;">
       <img style="justify-content: center;align-items: center;display: flex;margin: auto;max-height: 200px;"
       src="../../assets/img/Primo-Pobre_Brasilia_Pagode_e_Feijoada-5 (1).webp" >
